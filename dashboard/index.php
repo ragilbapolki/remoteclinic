@@ -257,7 +257,7 @@ $total_items = mysqli_num_rows($total_items);
                             <div class="card-header d-flex justify-content-between">
                                 <div class="header-title">
                                     <h4 class="card-title"><i class="fa-solid fa-prescription-bottle-medical"></i>
-                                        Refill Update</h4>
+                                        Pembaruan Isi Ulang</h4>
                                 </div>
                             </div>
                             <div class="card-body">
