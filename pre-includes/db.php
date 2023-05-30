@@ -2,7 +2,7 @@
 // DATABASE CONNECTION //
 @session_start();
 
-$databaseHost = 'localhost';
+$databaseHost = 'localhost:3304';
 $databaseName = 'remoteclinic';
 $databaseUsername = 'root';
 $databasePassword = '';
