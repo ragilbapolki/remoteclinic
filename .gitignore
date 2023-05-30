@@ -1,2 +1,2 @@
-*.pre-includes
+*.pre-includes/*
 db.php
