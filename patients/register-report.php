@@ -53,7 +53,7 @@ if (isset($_GET['success'])) {
                                 echo "<div class='alert alert-success' role='alert'>Pasien Sukses Didaftarkan!</div>";
 
                                 if (display_permission("prescribe_patient") == true) {
-                                    echo "<a class='btn btn-default formbutton theme-patients' href=../patients/prescribe.php?id=$result>Membuat Resep</a>";
+                                    echo "<a class='btn btn-default formbutton theme-patients' style='width: fit-content !important;' href=../patients/prescribe.php?id=$result>Pemeriksaan</a>";
                                 } else {
                                     echo "<a class='btn btn-default formbutton theme-patients' href=../patients/register-patient.php?id=$id>Pasien Baru</a>";
                                 }

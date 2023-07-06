@@ -193,6 +193,31 @@ function report_attachment($query, $id)
 }
 
 
+function pemeriksaan($report_id, $blood, $tensi, $is_hipertensi, $is_diabetes, $is_hemophilia, $other_diseases, $indication, $diagnosis,$is_hepatitis)
+{
+	global $con;
+
+	$current_time = date('Y-m-d H:i:s');
+	$physician_id = $_SESSION['id'];
+
+	//if available, then continue
+	mysqli_query($con, "insert into p_diagnosis_record set 
+				physician_id='$physician_id',
+				blood='$blood',					
+				tensi='$tensi',
+				is_hipertensi='$is_hipertensi',
+				is_diabetes='$is_diabetes',
+				is_hemophilia='$is_hemophilia',
+				is_hepatitis='$is_hepatitis',
+				other_diseases='$other_diseases',
+				indication='$indication',
+				diagnosis='$diagnosis',
+				report_id='$report_id',
+				last_update='$current_time'
+			") or die(mysqli_error());
+	return true;
+}
+
 function prescribe($report_id, $medicine, $doses,  $medicine_charge, $price_set)
 {
 	global $con;
